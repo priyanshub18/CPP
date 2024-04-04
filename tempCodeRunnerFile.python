@@ -1,0 +1,5 @@
+str = "oaky"
+
+for i in str:
+    if 'a' < i < 'z':
+        print("heiiill")

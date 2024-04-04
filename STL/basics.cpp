@@ -1,0 +1,2 @@
+URl to study STL ==
+"https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa2FtQ1pDOGdNWm41d3pIa0ZuOTJtTlZoRmRiQXxBQ3Jtc0trRHlvUTlwcm9ILWpYWGxPaU1seWhidnltQ1RSN0pFdEFzYVRpUHByRVR6Ukp6QXE3MThzb1h3SUpiRjhfME0wRlFvZm9DWi1UcnVUSURYcUxJejlzSjZtRFExSkxOMTdWWmlfNFdHV2NOR3FtNmZkcw&q=https%3A%2F%2Ftakeuforward.org%2Fc%2Fc-stl-tutorial-most-frequent-used-stl-containers%2F&v=RRVYpIET_RU"
