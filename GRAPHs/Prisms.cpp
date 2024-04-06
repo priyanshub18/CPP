@@ -10,7 +10,7 @@ void add_edge(int u, int v, int wt, bool bidir=true) {
         gr[v].push_back({u, wt});
     }
 }
-
+//commit
 ll prims(int src, int n) {
     priority_queue<pp, vector<pp> , greater<pp> > pq; // {wt, node}
     unordered_set<int> vis;
