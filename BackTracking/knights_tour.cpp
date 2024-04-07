@@ -13,8 +13,8 @@ void display(vector<vector<int> >& grid , int n){
         cout<<endl;
     }
 }
-bool is_it_safe(vector<vector<int > >& grid , int i , int j , int n ){
-    return i >= 0 and j>= 0 and i < n and j < n and grid[i][j] = -1;
+bool is_it_safe(vector<vector<int > >& grid ,int i , int j , int n ){
+    return i >= 0 and j >= 0 and i < n and j < n and grid[i][j] = -1;
 }
 void f(vector<vector<int>> &grid , int i , int j , int n, int count ){
     if(count == n * n -1){
