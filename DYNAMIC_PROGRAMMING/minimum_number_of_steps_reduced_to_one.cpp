@@ -9,7 +9,7 @@ int f(int n ){
     return 1+min(f(n-1),  min((n% 2)?f(n/2 ): INT_MAX , (n% 3 == 0)?f(n/3): INT_MAX));
 }
 int main(){
-    int n =1 ;
+    int n =10 ;
     cout<<f(n);
     return 0;
 }
