@@ -1,20 +1,38 @@
-// #include <bits/stdc++.h>
-// int f(int idx , int s,vector<int>& arr){
-// 	if(s == 0 ) return 1;
-// 	if(idx == 0) return (arr[0] == s)? 1 : 0;
+#include<bits/stdc++.h>
+#include<vector>
+                    
+using namespace std;
+                        
+int main(){
+    
+    return 0;
+}
 
-// 	int notpick = f(idx -1 , s, arr);
-// 	int pick = 0;
-// 	if(arr[idx] >= s) pick = f(idx-1 , s-arr[idx] , arr);
+#include <bits/stdc++.h>
+int f(int idx , int s,vector<int>& arr){
+	//if(s == 0 ) return 1;
+    //this base case would not work for the case of zeroes in the array
 
-// 	return notpick + pick ;
-//  }
-// int findWays(vector<int>& arr, int k)
-// {		
-// 	int n = arr.size();
-// 	return f(n-1 , k, arr);
+	//if(idx == 0) return (arr[0] == s)? 1 : 0;  this is for the case of no zeroes in the array
+
+    if(idx == 0){
+        if(s == 0 and arr[0] == 0) return 2;
+        if(s == 0 or s == arr[0]) return 1;
+        return 0;
+    }
+
+	int notpick = f(idx -1 , s, arr);
+	int pick = 0;
+	if(arr[idx] >= s) pick = f(idx-1 , s-arr[idx] , arr);
+
+	return notpick + pick ;
+ }
+int findWays(vector<int>& arr, int k)
+{		
+	int n = arr.size();
+	return f(n-1 , k, arr);
 	
-// }
+}
 #include<bits/stdc++.h>
 #include<vector>
                     
