@@ -4,7 +4,7 @@
 using namespace std;
 void f(string s , int n ){
     if(n == s.length()) {
-        cout<<s<<" ";
+        cout<<s<<"\n";
         return;
     }
     if(s.length()== 0 || s[s.length()-1] == '0'){
