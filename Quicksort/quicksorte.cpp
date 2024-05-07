@@ -3,30 +3,21 @@ using namespace std;
 //if we need to remove o(n^2) use pivot as (si+ei)/2;
 int partition(int arr[] , int si , int ei){
     int pivot = arr[si];
-    int count = 0;
-    for(int i = si; i <= ei ; i++){
-        if(arr[i] < pivot) count++;
+    int i = si;
+    int j = ei;
+
+    while(i < j ){
+        while (arr[i] <= pivot and i <= ei) i++;
+        while (arr[j] > pivot and j >= si) j--;
+
+        if(i < j) swap(arr[i] , arr[j]);
+        
     }
 
 
-    int pivotIdx = count + si;
+    swap(arr[si] , arr[j]);
 
-    swap(arr[si] , arr[pivotIdx]);
-
-
-    int i = si , j = ei;
-    while( i < pivotIdx && j > pivotIdx){
-        if(arr[i] < pivot) i++;
-        if(arr[j] > pivot) j--;
-        else if(arr[i] > pivot && arr[j] <= pivot){
-            swap(arr[i] , arr[j]);
-            i++;
-            j--;
-        }
-    }
-
-    return pivotIdx;
-
+    return j;
 }
 void quicksort(int arr[] , int si , int ei){
     if(si >= ei) return ;

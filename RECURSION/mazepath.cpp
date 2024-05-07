@@ -20,7 +20,7 @@ void printPath(int sr,int sc ,int er ,int ec, string s){
 }
 int main(){
     string s;
-   printPath(1,1,4,4,s);
+   printPath(1,1,3,3,s);
 
 
 

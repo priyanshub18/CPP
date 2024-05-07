@@ -38,7 +38,7 @@ int main(){
             break;
     }
 
-    if(!flag) cout<<-1;
+    if(!flag) cout<< -1;
     else {
         cout<<"range is from "<<Kmin<<" "<<Kmax;
     }
