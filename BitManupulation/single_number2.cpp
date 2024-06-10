@@ -16,7 +16,7 @@ public:
 
        return ans;
     }
-};
+}
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
