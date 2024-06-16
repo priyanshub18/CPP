@@ -27,13 +27,13 @@ public:
         if(c == 9) return f(board , r +1, 0);
         if(board[r][c] != '.') return f(board , r , c+1);
         for(int j = 1 ; j <= 9 ; j++){
-            if(isSafe(board , r ,c , j)){
+            if(isSafe(board , r ,c , j)){ 
                 board[r][c] = '0'+j;
                 bool b = f(board , r , c+1);
 
                 if(b) return true;
                 board[r][c] = '.';
-
+    
             }
         }
         return false;
