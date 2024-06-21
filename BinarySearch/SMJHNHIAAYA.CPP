@@ -1,4 +1,13 @@
-lass Solution {
+#include<bits/stdc++.h>
+#include<vector>
+                    
+using namespace std;
+                        
+int main(){
+    
+    return 0;
+}
+class Solution {
 public:
     int search(vector<int>& nums, int t) {
 

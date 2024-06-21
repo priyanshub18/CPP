@@ -3,14 +3,14 @@
 using namespace std;
 
 
-int lowerBound(int arr[], int n , int target){
+int upperBound(int arr[], int n , int target){
     int low = 0 ;
     int high = n-1;
     int ans = n;
     while(low  <= high){
         int mid = low + (high - low)/2;
 
-        if(arr[mid] >= target) {
+        if(arr[mid] > target) {
            ans = mid;
            high = mid -1 ;
         }
@@ -23,7 +23,7 @@ int lowerBound(int arr[], int n , int target){
        
     
     }
-     return ans;
+    return ans;
 }
 
 int main(){
@@ -38,7 +38,7 @@ int main(){
     
     int target ;
     cin>>target;
-    cout<<lowerBound(arr, n , target);
+    cout<<upperBound(arr, n , target);
     
 
 }
