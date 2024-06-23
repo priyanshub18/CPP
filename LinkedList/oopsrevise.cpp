@@ -27,7 +27,7 @@ int main(){
     Student s1("okay" , 34 , 99.5);
     //better way is to directly define the pointer 
     Student* s = new Student("i am okay" , 77 , 9.0);
-    Student* s = &s1;
+    s = &s1;
     // objects are generally passed by value
     change(s1);
     cout<<s1.marks<<" ";

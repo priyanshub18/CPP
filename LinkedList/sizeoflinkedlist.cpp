@@ -17,10 +17,12 @@ public:
 int countnodes(Node* head){
     int count = 0;
     Node* temp = head;
-    while(temp != 0){
+    while(temp != NULL){
     //cout<<temp->value<<" ";
     count++;
+    cout<<temp->value<<" ";
     temp = temp->next;
+   
     
     }
     return count;
