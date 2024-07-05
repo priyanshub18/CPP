@@ -1,18 +1,22 @@
 #include<iostream>
 #include<stack>
+
+using namespace std;
 int prior(char ch){
+    if(ch == '^') return 3;
     if( ch == '+' || ch == '-') return 1;
     else return 2;
 }   
 
 int solve(int val1 , int val2 , char op){
-    if(op == '+') return val1 + val2;
+    if(op == '^') return pow(val1 , val2);
+    else if(op == '+') return val1 + val2;
     else if(op == '-') return val1 - val2;
     else if(op == '*') return val1 * val2;
     else return val1 / val2;
 
 }
-using namespace std;
+
                         
 int main(){
     string s = "2+6*4/8-3";
