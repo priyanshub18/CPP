@@ -3,6 +3,7 @@
 
 using namespace std;
 int prior(char ch){
+    if(ch == '^') return 3;
     if( ch == '+' || ch == '-') return 1;
     else return 2;
 }   
@@ -17,10 +18,9 @@ string solve(string val1 , string val2 , char op){
   
     return s;
 }
-using namespace std;
                         
 int main(){
-    string s = "(7+9)*4/8-3";
+    string s = "a+b*(c^d-e)^(f+g*h)-i";
     //we need two stacks
 
     stack<string> val;
@@ -30,8 +30,8 @@ int main(){
         //check if s[i] is a digit or not
         char ele = s[i];
         //int ascii = (int)ele;
-        if(ele >= 48 && ele <= 57){
-            val.push(to_string(ele-48));
+        if(ele >= 'a' and ele <= 'z'){
+            val.push(to_string(ele));
         }
         else{
             if(op.size() == 0 ) op.push(ele);
@@ -79,7 +79,7 @@ int main(){
         }
     }
 
-    //op stack can have values 
+    // op stack can have values 
     // so make it empty;
 
     while(op.size()> 0 ){

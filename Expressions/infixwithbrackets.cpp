@@ -49,7 +49,7 @@ int main(){
                 }
                 op.pop();
             }
-            else if( prior(ele) > prior(op.top())) op.push(ele);
+            else if(prior(ele) > prior(op.top())) op.push(ele);
 
             else{//work
                 //i have to do val1 and val2

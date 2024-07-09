@@ -19,7 +19,7 @@ string solve(string val1 , string val2 , char op){
 using namespace std;
                         
 int main(){
-    string s = "(7+9)*4/8-3";
+    string s = "(7+9)*(4/8)-3";
     //we need two stacks
 
     stack<string> val;
